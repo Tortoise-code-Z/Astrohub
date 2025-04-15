@@ -1,0 +1,16 @@
+:root {
+    --new_height_desktop_l: 180px;
+    --new_height_desktop: 150px;
+    --new_height_mobile_s: 200px;
+    --new_height_mobile_l: 200px;
+    --news_gap: 15px;
+
+    --events_height_desktop: 140px;
+    --events_height_desktop_l: 200px;
+    --events_height_tablet: 140px;
+    --events_height_mobile_s: 150px;
+    --events_height_mobile_l: 180px;
+    --events_gap: 15px;
+
+    --explore_gap: 15px;
+}

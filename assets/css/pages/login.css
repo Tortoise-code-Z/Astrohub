@@ -1,0 +1,158 @@
+@import url(../base.css);
+
+main {
+    height: 100vh;
+}
+
+.banner-login {
+    display: none;
+    position: relative;
+}
+
+.bl-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.banner-login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, transparent, var(--primary_color));
+    z-index: 2;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    height: calc(100% - var(--navbar_height));
+    margin-top: var(--navbar_height);
+    overflow-y: auto;
+}
+
+.s-login {
+    padding-top: 0px !important;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-item {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+form button {
+    align-self: normal;
+    margin: 0 !important;
+}
+
+.have-acount {
+    text-align: center;
+    font-size: var(--font_size_12);
+    text-decoration: underline;
+}
+
+/* mobile M */
+@media all and (min-width: 375px) {
+}
+
+/* mobil L*/
+@media all and (min-width: 425px) {
+    form {
+        width: 80%;
+    }
+}
+
+/* Mobiles acostados */
+@media all and (min-width: 550px) {
+    form {
+        width: 60%;
+    }
+}
+
+/* Mobiles acostados */
+@media all and (max-height: 420px) {
+    .form-container {
+        justify-content: flex-start;
+    }
+}
+
+/* Tablets */
+@media all and (min-width: 767px) {
+    form {
+        width: 400px;
+    }
+}
+
+/* Desktops */
+@media all and (min-width: 1024px) {
+    .s-login {
+        flex-direction: row;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .banner-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+    }
+
+    .form-container {
+        width: 40%;
+    }
+
+    form {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .have-acount {
+        font-size: var(--font_size_14);
+    }
+}
+
+/* Desktops M */
+@media all and (min-width: 1200px) {
+    form {
+        width: 400px;
+    }
+}
+
+/* Desktops L */
+@media all and (min-width: 1440px) {
+}

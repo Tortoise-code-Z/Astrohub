@@ -1,0 +1,177 @@
+@import url(../base.css);
+
+main {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.banner-registro {
+    display: none;
+    position: relative;
+}
+
+.br-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.banner-registro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, transparent, var(--primary_color));
+    z-index: 2;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    height: calc(100% - var(--navbar_height));
+    margin-top: var(--navbar_height);
+    overflow-y: auto;
+}
+
+.form-container::-webkit-scrollbar {
+    display: none;
+}
+
+.s-registro {
+    padding-top: 0px !important;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-item {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+form button {
+    align-self: normal;
+    margin: 0 !important;
+}
+
+.have-acount {
+    text-align: center;
+    font-size: var(--font_size_12);
+    text-decoration: underline;
+}
+
+.terms-form .input-err {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.terms-form input {
+    width: auto;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.terms-form label {
+    margin: 0 !important;
+    font-size: var(--font_size_12);
+}
+
+/* mobile M */
+@media all and (min-width: 375px) {
+}
+
+/* mobil L*/
+@media all and (min-width: 425px) {
+    form {
+        width: 80%;
+    }
+}
+
+/* Mobiles acostados */
+@media all and (min-width: 550px) {
+    form {
+        width: 60%;
+    }
+}
+
+/* Mobiles acostados */
+@media all and (max-height: 420px) {
+}
+
+/* Tablets */
+@media all and (min-width: 767px) {
+    form {
+        width: 400px;
+    }
+}
+
+/* Desktops */
+@media all and (min-width: 1024px) {
+    .s-registro {
+        flex-direction: row;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .banner-registro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+    }
+
+    .form-container {
+        width: 40%;
+    }
+
+    form {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .have-acount {
+        font-size: var(--font_size_14);
+    }
+}
+
+/* Desktops M */
+@media all and (min-width: 1200px) {
+    form {
+        width: 400px;
+    }
+}
+
+/* Desktops L */
+@media all and (min-width: 1440px) {
+}

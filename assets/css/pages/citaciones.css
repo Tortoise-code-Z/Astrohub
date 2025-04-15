@@ -1,0 +1,148 @@
+@import url(../base.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: var(--navbar_height);
+}
+
+.err-change-cita {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(161, 68, 68);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.c-table {
+    width: 100%;
+}
+
+.table-row {
+    width: 100%;
+    display: flex;
+}
+
+.table-column {
+    flex: 1 0 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--target_border_color);
+}
+
+.table-head {
+    background-color: var(--target_background_color_hover);
+}
+
+.no-editable {
+    pointer-events: none;
+    background-color: transparent !important;
+    border: none;
+    text-align: center;
+}
+
+.c-buttons-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.edit-form .cancel,
+.edit-form .submit {
+    display: none;
+}
+
+form {
+    width: 100%;
+}
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-item {
+    width: 100%;
+}
+
+.input-err {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+.c-form::-webkit-scrollbar {
+    display: none;
+}
+
+.create-appointment-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    /* background-color: var(--target_background_color); */
+}
+
+.create-appointment-container p {
+    font-family: "Space Grotesk Medium";
+}
+
+.btn-create-appointment {
+    display: block;
+    margin: 0 !important;
+    padding: 10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem !important;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+/* mobile M */
+@media all and (min-width: 375px) {
+}
+
+/* mobil L*/
+@media all and (min-width: 425px) {
+}
+
+/* Mobiles acostados */
+@media all and (min-width: 550px) {
+}
+
+/* Tablets */
+@media all and (min-width: 767px) {
+}
+
+/* Desktops */
+@media all and (min-width: 1024px) {
+}
+
+/* Desktops M */
+@media all and (min-width: 1200px) {
+}
+
+/* Desktops L */
+@media all and (min-width: 1440px) {
+    .container {
+        width: 1200px;
+    }
+}

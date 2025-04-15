@@ -1,0 +1,68 @@
+:root {
+    /* fuentes */
+    --font_size_h1_desktop: 3rem;
+    --font_size_h1_tablet: 2.3rem;
+    --font_size_h1_defect: 2rem;
+    --font_size_h1_mobile: 1.75rem;
+
+    --font_size_h2_desktop: 2rem;
+    --font_size_h2_tablet: 1.7rem;
+    --font_size_h2_mobile_l: 1.5rem;
+    --font_size_h2_mobile: 1.35rem;
+
+    --font_size_h3_desktop: 1.3rem;
+    --font_size_h3_mobile_l: 1.1rem;
+    --font_size_h3_mobile: 1rem;
+
+    --font_size_18: 1.125rem;
+    --font_size_16: 1rem;
+    --font_size_14: 0.875rem;
+    --font_size_12: 0.75rem;
+    --font_size_10: 0.625rem;
+    --font_size_8: 0.5rem;
+    --font_size_6: 0.375rem;
+
+    /* colores */
+    --primary_color: #111121;
+    --txt_primary_color: #fff;
+    --txt_secondary_color: #9494c7;
+    --txt_terciary_color: #5f5f86;
+    --btn_primary_color: #1a1ae5;
+    --btn_secondary_color: #242447;
+    --btn_trash: #c7240e;
+    --background_input: #1a1a2e;
+    --border_color_input: #303052;
+    --border_color_input_focus: #32326e9e;
+    --err_color: #ef2121;
+    --target_background_color: #151529;
+    --target_background_color_hover: #16162c;
+    --target_border_color: #1b1b35;
+    --btn_primary_color_hover: #2c2cff;
+    --btn_secondary_color_hover: #2b2b56;
+    --btn_trash_hover: #e63d27;
+
+    /* paddings y margins */
+    --section_padding_desktop: 100px;
+    --section_padding_mobile: 80px;
+
+    --button_padding_x_mobile_s: 10px;
+    --button_padding_y_mobile_s: 10px;
+
+    --button_padding_x_mobile_m: 15px;
+    --button_padding_y_mobile_m: 10px;
+
+    --h1_margin_b: 10px;
+    --h2_margin_b: 20px;
+    --h3_margin_b: 5px;
+
+    --button_margin_l: 5px;
+
+    --padding_x_input_mobile: 15px;
+    --padding_y_input_mobile: 10px;
+
+    /* alturas y anchos */
+    --container_width: 90%;
+    --navbar_height: 65px;
+
+    /* Shadows */
+}

@@ -1,0 +1,69 @@
+@import url(../../base.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: var(--navbar_height);
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0 !important;
+}
+
+button {
+    margin: 0 !important;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90% !important;
+}
+
+/* mobile m */
+@media all and (min-width: 375px) {
+}
+
+/* mobil l y mobiles acostados */
+@media all and (min-width: 425px) {
+}
+
+@media all and (min-width: 480px) {
+}
+
+@media all and (min-width: 767px) {
+    form {
+        width: 70%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    form {
+        width: 700px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+}
+
+@media all and (min-width: 1440px) {
+}

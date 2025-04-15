@@ -1,0 +1,13 @@
+:root {
+    --burguer_time: 0.5s;
+    --padding_x_navBar_mobile_s: 5px;
+    --padding_x_navBar_mobile_m: 10px;
+    --padding_x_navBar_mobile_l: 20px;
+
+    --padding_x_navlist_links_mobile_l: 10px;
+    --padding_y_navlist_links_mobile_l: 10px;
+
+    --burguerMenu_width: 50%;
+
+    --border_color_nav: #211f39;
+}
