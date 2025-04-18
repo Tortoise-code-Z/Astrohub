@@ -23,7 +23,7 @@ usersItem.forEach((user) => {
 const usersHandleClickEvent = (user) => {
     const username = user.querySelector(".name-user");
     innerText(usernameTitle, username.textContent);
-    fetchCitasUser(parseInt(user.id));
+    fetchNewsUser(parseInt(user.id));
 };
 
 /* INSTANCIAS */
@@ -33,8 +33,8 @@ const filterUsers = new Filter(input, usersItem, parentElement, false);
 
 /* FUNCIONES */
 
-// Función asincrona que recoge los datos de las citas del usuario y las introduce en el dom
-async function fetchCitasUser(idUser) {
+// Función asincrona que recoge los datos de las noticias del usuario y las introduce en el dom
+async function fetchNewsUser(idUser) {
     try {
         const response = await fetch(
             `./api/get-news-admin.php?idUser=${idUser}`
@@ -46,7 +46,7 @@ async function fetchCitasUser(idUser) {
 
         const data = await response.json();
 
-        deleteCitas();
+        deleteNews();
 
         if (data.length > 0) {
             data.forEach((data) => {
@@ -88,8 +88,8 @@ const createNoticia = (data) => {
     return noticia;
 };
 
-// Elimina las citas en el Dom
-const deleteCitas = () => {
+// Elimina las noticias en el Dom
+const deleteNews = () => {
     const news = Array.from(document.querySelectorAll(".nuc-item"));
     news.forEach((item) => item.remove());
 };
