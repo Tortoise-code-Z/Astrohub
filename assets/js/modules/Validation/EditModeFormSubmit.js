@@ -32,7 +32,7 @@ export class EditModeFormSubmit extends FormSubmit {
         this.editButton = editButton;
         this.cancelButton = cancelButton;
 
-        // this.initSubmitEvent();
+        this.initSubmitEvent();
         this.initClickEditEvent();
         this.initClickCancelEvent();
     }
