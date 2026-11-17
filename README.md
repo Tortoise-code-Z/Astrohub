@@ -15,12 +15,20 @@ Visitors and registered users can:
 
 AstroHub is designed as an educational and management portal for **science outreach centres**, **astronomy communities** or **space enthusiasts** who want to centralise information and participation.
 
+## Project status 📌
+
+This repository holds the course final project **as it was delivered and passed**, plus the improvements I made afterwards.
+
+- **Delivered version:** tag [`v1.0-entrega-curso`](https://github.com/Tortoise-code-Z/Astrohub/tree/v1.0-entrega-curso). The code exactly as submitted for the course.
+- **Post-course work (in progress):** a security audit of my own code and the fixes that came out of it: access control on every action, ownership checks, CSRF protection, output escaping and configuration through environment variables. Each fix is its own commit, and the git history has not been rewritten.
+
 ![AstroHub - Home](./assets/images/screenshots/screenshot-inicio.png)
 
 ---
 
 ## Table of contents 🧭
 
+- [Project status](#project-status-)
 - [Demo](#demo-)
 - [Features](#features-)
 - [Installation](#installation-)
